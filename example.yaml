@@ -1,0 +1,12 @@
+title: Example
+
+items:
+- Foo
+- Bar
+- Baz
+
+# 4 columns of landscape A4
+_template: example
+_page_width: 74mm
+_page_height: 210mm
+_postprocess_cmd: "pdfjam --a4paper --landscape --frame true --nup 4x1 --outfile $OUTPUT $INPUT $INPUT $INPUT $INPUT"
